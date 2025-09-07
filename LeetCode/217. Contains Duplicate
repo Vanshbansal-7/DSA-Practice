@@ -1,0 +1,21 @@
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        int n=nums.length;
+        Arrays.sort(nums);
+        int i=0;
+        int j=1;
+        Boolean result=false;
+        while (j<n){
+            if (nums[i]==nums[j]){
+                result =true;
+                break;
+            }
+            else{
+                i++;
+                j++;
+            }
+
+        }return result;
+        
+    }
+}
